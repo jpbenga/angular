@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <h1>{{ fullName }}</h1>
+    <div>
+      <label for="">Prénom: </label>
+      <input type="text" #firstNameInput>
+      <label for="">Nom: </label>
+      <input type="text" #lastNameInput>
+      <button (click)="handleFullName(firstNameInput.value, lastNameInput.value)">Envoyer</button>
+      <!-- <button (click)="fullName = firstNameInput.value + lastNameInput.value">Envoyer</button> -->
+    </div>
+  </div>
+</body>
+</html>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,14 @@
+<div class="container">
+  <button (click)="handleSimpleClick()">bouton1</button>
+  <button (dblclick)="handleDoubleClick()">bouton2</button>
+</div>
+<div class="container">
+  <button value="From my button" (click)="handleButtonClick($event)">bouton3</button>
+</div>
+<div class="container">
+    <h1 (mouseover)="handleMouseOver($event)">MouseOver</h1>
+    <input type="text" (input)="handleInput($event)" (keyup)="handleInputEnter($event)">
+    <p>{{ message }}</p>
+</div>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,30 @@
+<div class="container">
+    <h1 [class]="titleCssClass">SimpleBind</h1>
+    <p [style]="titleStyle">Ceci est un exercice pour apprendre le binding avec Angular</p>
+</div>
+<div class="container">
+    <img [src]="imageUrl" [attr.alt]="imageTitle" height="300px" width="300px">
+</div>
+
+<label for="checkbox">Cocher cette case</label>
+<input type="checkbox" name="checkbox" id="" [checked]="isChecked">
+
+<div class="container">
+    <table>
+        <tr>
+            <td>1</td>
+            <td [colSpan]=columnMerged>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td [colSpan]=columnMerged>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+</div>
